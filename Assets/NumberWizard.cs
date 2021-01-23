@@ -8,11 +8,22 @@ public class NumberWizard : MonoBehaviour
     int minN;
     int guess;
 
+
+
+
+
+
     // Start is called before the first frame update
     void Start()
     {
         StartGame();     
     }
+
+
+
+
+
+
 
     void StartGame()
     {
@@ -28,6 +39,12 @@ public class NumberWizard : MonoBehaviour
         Debug.Log("Arrow Up = Higher, Arrow Down = Lower, Enter = Correct");
         maxN = maxN + 1;
     }
+
+
+
+
+
+
 
     // Update is called once per frame
     void Update()
@@ -45,8 +62,18 @@ public class NumberWizard : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Return))
         {
             Debug.Log("Am so smart");
-            StartGame();        }
+            StartGame();
+        }
+        else if (Input.anyKeyDown)
+            Debug.Log("You're not supposed to press this");
     }
+
+
+
+
+
+
+
     void NextGuess()
     {
         guess = (maxN + minN) / 2;
