@@ -50,7 +50,15 @@ public class NumberWizard : MonoBehaviour
     void NextGuess()
     {
         guess = (maxN + minN) / 2;
-        Debug.Log("Up = My number is higher than:" + guess);
-        Debug.Log("Down = My number is lower than: " + guess);
+        if (guess - maxN == 0 || guess - minN ==0)
+        {
+            Debug.Log("You Lie it is " + guess + " I'm never wrong. Press enter to admit it.");
+        }
+        else
+        {
+            Debug.Log("Up = My number is higher than:" + guess);
+            Debug.Log("Down = My number is lower than: " + guess);
+            Debug.Log("Enter = My number is : " + guess);
+        }
     }
 }
