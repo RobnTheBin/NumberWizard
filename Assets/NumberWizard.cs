@@ -24,8 +24,8 @@ public class NumberWizard : MonoBehaviour
         Debug.Log("Pick a number");
         Debug.Log("The Lowest number you can pick is: " + minN);
         Debug.Log("Highest number you can pick is: " + maxN);
-        Debug.Log("Tell me if your number is higher or lower " + guess);
-        Debug.Log("Push Up = Higher, Push Down = Lower, Push Enter = Correct");
+        Debug.Log("Tell me if your number is higher or lower than: " + guess);
+        Debug.Log("Arrow Up = Higher, Arrow Down = Lower, Enter = Correct");
         maxN = maxN + 1;
     }
 
